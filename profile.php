@@ -1,0 +1,1 @@
+<?php require_once 'config.php';if(!user())go('login.php');$title='Profile';include 'header.php';?><div class="panel"><h1>My profile</h1><p>Name: <?= h(user()['name']) ?></p><p>Email: <?= h(user()['email']) ?></p><a class="btn btn-rose" href="orders.php">My orders</a></div><?php include 'footer.php'; ?>
